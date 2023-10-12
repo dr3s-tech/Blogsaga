@@ -22,7 +22,7 @@
                 android:layout_height="@dimen/_96dp"
                 android:scaleType="centerCrop"
                 app:shapeAppearanceOverlay="@style/shape"
-                app:srcCompat="@drawable/recentpic" />
+                 />
 
             <ImageView
                 android:id="@+id/bookmark_recent"

@@ -30,19 +30,10 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/save"
         style="@style/button_style_crate_page"
-        android:layout_marginEnd="@dimen/_14sp"
-        android:layout_toStartOf="@+id/publish"
+        android:layout_marginEnd="@dimen/_14dp"
+        android:layout_alignParentEnd="true"
         android:background="@drawable/design_widget_et"
         android:text="@string/save"
-        android:textAllCaps="false" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/publish"
-        style="@style/button_style_crate_page"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="@dimen/_20dp"
-        android:background="@drawable/design_widget_et"
-        android:text="@string/publish"
         android:textAllCaps="false" />
 
     <ScrollView
