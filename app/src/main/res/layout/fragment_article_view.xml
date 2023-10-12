@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_create_page"
+    tools:context=".fragments.ArticleView">
+
+    <ImageView
+        android:id="@+id/cross_AtView"
+        android:layout_width="@dimen/_30dp"
+        android:layout_height="@dimen/_30dp"
+        android:layout_marginStart="@dimen/_24dp"
+        android:layout_marginTop="@dimen/_32dp"
+        android:src="@drawable/cross" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cross_AtView"
+        android:layout_marginTop="@dimen/_30dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="@dimen/_356dp"
+                android:layout_height="@dimen/_228dp"
+                android:layout_marginHorizontal="@dimen/_24dp"
+                android:id="@+id/article_image_view"
+                />
+            <TextView
+                style="@style/article_title_et"
+                android:id="@+id/TitelView"
+                android:layout_marginHorizontal="@dimen/_24dp"
+                android:elevation="@dimen/_12dp"
+                android:padding="@dimen/_12dp"
+                />
+            <TextView
+                android:layout_width="@dimen/_356dp"
+                android:layout_height="@dimen/_450dp"
+                android:id="@+id/descriptionView"
+                android:layout_marginTop="@dimen/_12dp"
+                android:layout_marginHorizontal="@dimen/_24dp"
+                android:background="@drawable/widgets_create_img"
+                android:elevation="@dimen/_12dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_19sp"
+                android:padding="@dimen/_12dp"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

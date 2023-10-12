@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.blogsaga.R;
+import com.example.blogsaga.utils.callbacks.RecyclerCallbacks;
 import com.example.blogsaga.utils.models.Articles;
 import com.example.blogsaga.utils.models.UserTokens;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -32,17 +33,20 @@ public class UpdateRecentAdapter extends RecyclerView.Adapter<UpdateRecentAdapte
 
     private ArrayList<Articles> RecentSet;
     private int limit;
+    private RecyclerCallbacks callbacks;
 
-    public UpdateRecentAdapter(int limit) {
+
+    public UpdateRecentAdapter(int limit,RecyclerCallbacks callbacks) {
         this.RecentSet=new ArrayList<>();
         this.limit=limit;
+        this.callbacks=callbacks;
     }
 
     @NonNull
     @Override
     public UpdateRecentAdapter.RecentHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_item_view,parent,false);
-        return new RecentHolder(view);
+        return new RecentHolder(view,callbacks);
     }
 
     @Override
@@ -60,16 +64,19 @@ public class UpdateRecentAdapter extends RecyclerView.Adapter<UpdateRecentAdapte
         RecentSet.add(recentArticle1);
     }
 
-    public class RecentHolder extends RecyclerView.ViewHolder {
+    public class RecentHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         private TextView Tiltle;
         private ShapeableImageView article_imgRecent;
         private ImageView bookmark;
-        public RecentHolder(@NonNull View itemView) {
+        RecyclerCallbacks callbacks;
+        public RecentHolder(@NonNull View itemView,RecyclerCallbacks callbacks) {
             super(itemView);
             Tiltle=itemView.findViewById(R.id.article_title);
             article_imgRecent=itemView.findViewById(R.id.article_image);
             bookmark=itemView.findViewById(R.id.bookmark_recent);
+            this.callbacks=callbacks;
+            itemView.setOnClickListener(this::onClick);
         }
 
         public void bind(Articles articles) {
@@ -100,6 +107,11 @@ public class UpdateRecentAdapter extends RecyclerView.Adapter<UpdateRecentAdapte
 
                 }
             });
+        }
+
+        @Override
+        public void onClick(View v) {
+            callbacks.onClick(RecentSet.get(getAdapterPosition()));
         }
     }
 }

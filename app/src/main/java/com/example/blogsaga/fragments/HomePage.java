@@ -101,7 +101,7 @@ public class HomePage extends Fragment implements RecyclerCallbacks {
 //        notificationbtn = view.findViewById(R.id.notification);
         bookmarkbtn = view.findViewById(R.id.bookmark);
         ownAdapter = new UpdateArticlesAdapter(this);
-        recentAdapter=new UpdateRecentAdapter(20);
+        recentAdapter=new UpdateRecentAdapter(20,this);
         token = UserTokens.getInstance();
         LayoutManager = new LinearLayoutManager(getContext());
         recentLayoutManager=new LinearLayoutManager(getContext());
@@ -221,6 +221,7 @@ public class HomePage extends Fragment implements RecyclerCallbacks {
     @Override
     public void onClick(Articles articles) {
         Toast.makeText(getContext(), "Article is clicked", Toast.LENGTH_SHORT).show();
+        addFragment(new ArticleView(articles));
         
     }
 }
