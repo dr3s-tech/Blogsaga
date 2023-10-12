@@ -78,10 +78,10 @@
             android:fontFamily="@font/oleoscript_bold"
             android:background="@drawable/design_widget_et"
             android:gravity="center"
-            android:layout_below="@+id/userEmailTv"
+            android:layout_below="@+id/User_name"
             android:layout_marginStart="@dimen/_12dp"
-            android:layout_marginTop="@dimen/_32dp"
-            android:layout_toRightOf="@+id/User_name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_16dp"
             android:textSize="@dimen/_19sp"/>
 
     <View

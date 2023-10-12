@@ -36,6 +36,7 @@
                 android:id="@+id/TitelView"
                 android:layout_marginHorizontal="@dimen/_24dp"
                 android:elevation="@dimen/_12dp"
+                android:padding="@dimen/_12dp"
                 />
             <TextView
                 android:layout_width="@dimen/_356dp"
