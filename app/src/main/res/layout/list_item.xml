@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/AC_image"
+        android:layout_width="@dimen/_30dp"
+        android:layout_height="@dimen/_30dp"
+        android:layout_marginStart="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_12dp"
+        android:background="@drawable/recentpic"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/circle"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12dp"
+            android:layout_toEndOf="@+id/client_AC_image"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/UserName"
+                android:layout_marginStart="@dimen/_8dp"
+                android:text="User@name: "
+                android:fontFamily="@font/oleoscript_bold"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/messege"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:text=" started following you"
+                android:fontFamily="@font/oleoscript_regular"
+                android:maxLines="5"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    <ImageView
+        android:layout_width="@dimen/_48dp"
+        android:layout_height="@dimen/_48dp"
+        android:id="@+id/postImage"
+        android:layout_alignParentEnd="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search_back"
+    tools:context=".fragments.Search">
+
+    <ImageView
+        android:id="@+id/back_button_search"
+        android:layout_width="@dimen/_48dp"
+        android:layout_height="@dimen/_32dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_28dp"
+        android:src="@drawable/baseline_arrow_back_24" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/_48dp"
+       android:layout_below="@+id/back_button_search"
+       android:orientation="horizontal"
+       >
+       <EditText
+           android:id="@+id/search_et"
+           android:layout_width="320dp"
+           android:layout_height="match_parent"
+           android:background="@drawable/design_search_widgets"
+           android:layout_marginStart="@dimen/_24dp"
+           android:paddingStart="@dimen/_12dp"
+           android:hint="@string/Search_hint"
+           android:textColor="@color/black"
+           />
+       <ImageView
+           android:layout_width="@dimen/_32dp"
+           android:layout_height="@dimen/_32dp"
+           android:id="@+id/search"
+           android:src="@drawable/search"
+           android:layout_marginTop="@dimen/_8dp"
+           android:layout_marginStart="@dimen/_12dp"
+           />
+
+   </LinearLayout>
+
+</RelativeLayout>

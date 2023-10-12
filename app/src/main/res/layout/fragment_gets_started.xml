@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_app"
+    tools:context=".fragments.GetStarted">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgLogo"
+            style="@style/logo_style"
+            android:layout_width="@dimen/_250dp"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_228dp"
+            android:layout_marginBottom="@dimen/_24dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/txtLetsYouIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_40sp"
+            android:fontFamily="@font/oleoscript_bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:text="@string/LetsYouIn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGoogle"
+            style="@style/edit_text_style"
+            android:layout_width="@dimen/_356dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:drawableStart="@drawable/google"
+            android:text="@string/withGoogle" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGithub"
+            android:layout_width="@dimen/_356dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:drawableStart="@drawable/github"
+            style="@style/edit_text_style"
+            android:text="@string/withGitHub" />
+
+        <TextView
+            android:id="@+id/txtOr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_19sp"
+            android:fontFamily="@font/oleoscript_regular"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_24dp"
+            android:text="@string/or" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUsername"
+            android:layout_width="@dimen/_356dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24dp"
+            style="@style/edit_text_style"
+            android:gravity="center"
+            android:text="@string/withUserName" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_32dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/txtDontAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/oleoscript_regular"
+                android:textSize="@dimen/_19sp"
+                android:layout_centerVertical="true"
+                android:text="@string/dontHaveAccount"
+                />
+
+            <TextView
+                android:id="@+id/txtSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oleoscript_regular"
+                android:layout_toEndOf="@id/txtDontAccount"
+                android:textSize="@dimen/_19sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/brown"
+                android:text="@string/SignUp"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

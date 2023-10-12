@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_app"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.UserDetailsBySearch">
+
+    <ProgressBar
+        android:id="@+id/progressBar_Usv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@drawable/design_search_widgets"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/back_button_Usv"
+        android:layout_width="@dimen/_32dp"
+        android:layout_height="@dimen/_32dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_28dp"
+        />
+
+    <TextView
+        android:id="@+id/userEmailTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email"
+        android:fontFamily="@font/oleoscript_bold"
+        android:textSize="@dimen/_24sp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@+id/back_button_Usv"
+        android:layout_marginTop="@dimen/_24dp"
+        android:layout_marginStart="@dimen/_12dp"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="@dimen/_96dp"
+        android:layout_height="@dimen/_96dp"
+        app:shapeAppearanceOverlay="@style/circle"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/userEmailTv"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/_28dp"
+        android:src="@drawable/dp"
+        android:layout_marginTop="@dimen/_12dp"
+        />
+
+    <!-- Here(below) username, number of Articles, Following, Followers should be change according to different users -->
+
+    <TextView
+        android:id="@+id/User_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12dp"
+        android:fontFamily="@font/oleoscript_bold"
+        android:text="User name"
+        android:layout_marginTop="@dimen/_36dp"
+        android:layout_toEndOf="@id/profile_pic"
+        android:layout_below="@+id/userEmailTv"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_24sp" />
+
+    <!--    linear layout for the edit button-->
+
+        <TextView
+            android:id="@+id/follow_btn"
+            android:layout_width="@dimen/_96dp"
+            android:layout_height="@dimen/_40dp"
+            android:text="follow"
+            android:textColor="@color/brown"
+            android:fontFamily="@font/oleoscript_bold"
+            android:background="@drawable/design_widget_et"
+            android:gravity="center"
+            android:layout_below="@+id/userEmailTv"
+            android:layout_marginStart="@dimen/_12dp"
+            android:layout_marginTop="@dimen/_32dp"
+            android:layout_toRightOf="@+id/User_name"
+            android:textSize="@dimen/_19sp"/>
+
+    <View
+        android:id="@+id/horizontal_part1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_3dp"
+        android:layout_marginStart="@dimen/_24dp"
+        android:layout_marginEnd="@dimen/_24dp"
+        android:layout_marginTop="@dimen/_24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profile_pic"
+        android:background="@color/tran"/>
+
+    <RelativeLayout
+        android:id="@+id/number_AAf"
+        android:layout_width="@dimen/_450dp"
+        android:layout_height="@dimen/_100dp"
+        android:layout_below="@+id/horizontal_part1"
+        android:layout_centerInParent="true">
+        <!--Articles section-->
+        <TextView
+            android:id="@+id/article_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginHorizontal="@dimen/_52dp"
+            android:layout_marginTop="@dimen/_12dp"
+            android:fontFamily="@font/oleoscript_regular"
+            android:text="135"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24sp" />
+
+        <TextView
+            android:id="@+id/Articles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/article_no"
+            android:layout_alignParentStart="true"
+            android:layout_marginHorizontal="@dimen/_40dp"
+            android:fontFamily="@font/oleoscript_regular"
+            android:text="@string/articles"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_19sp" />
+
+        <!--following section-->
+        <View
+            android:id="@+id/vertical_part1"
+            android:layout_width="@dimen/_3dp"
+            android:layout_height="@dimen/_78dp"
+            android:layout_marginStart="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_12dp"
+            android:layout_toEndOf="@+id/Articles"
+            android:background="@color/tran" />
+
+        <TextView
+            android:id="@+id/following_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/vertical_part2"
+            android:layout_marginHorizontal="@dimen/_40dp"
+            android:layout_marginTop="@dimen/_12dp"
+            android:layout_toEndOf="@+id/vertical_part1"
+            android:layout_toStartOf="@+id/vertical_part2"
+            android:gravity="center"
+            android:fontFamily="@font/oleoscript_regular"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24sp" />
+
+        <TextView
+            android:id="@+id/following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/following_no"
+            android:layout_marginHorizontal="@dimen/_24dp"
+            android:layout_toEndOf="@+id/vertical_part1"
+            android:fontFamily="@font/oleoscript_regular"
+            android:text="@string/following"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_19sp" />
+
+        <!--    follower section-->
+        <View
+            android:id="@+id/vertical_part2"
+            android:layout_width="@dimen/_3dp"
+            android:layout_height="@dimen/_78dp"
+            android:layout_marginStart="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_12dp"
+            android:layout_toEndOf="@+id/following"
+            android:background="@color/tran" />
+
+        <TextView
+            android:id="@+id/follower_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/_40dp"
+            android:layout_marginTop="@dimen/_12dp"
+            android:layout_toEndOf="@+id/vertical_part2"
+            android:fontFamily="@font/oleoscript_regular"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24sp" />
+
+        <TextView
+            android:id="@+id/follower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/following_no"
+            android:layout_marginHorizontal="@dimen/_24dp"
+            android:layout_toEndOf="@+id/vertical_part2"
+            android:fontFamily="@font/oleoscript_regular"
+            android:text="@string/followers"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_19sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/horizontal_part2"
+        android:layout_marginEnd="@dimen/_24dp"
+        android:layout_marginStart="@dimen/_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/number_AAf"
+        android:background="@color/tran"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48dp"
+        android:layout_marginTop="@dimen/_12dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:layout_below="@+id/horizontal_part2"
+        app:tabTextColor="@color/light_black"
+        android:background="@color/remove_back"
+        app:tabSelectedTextColor="@color/black"
+        app:tabIndicatorColor="@color/remove_back"
+        app:tabTextAppearance="@style/TabTextStyle"
+        />
+
+    <View
+        android:id="@+id/horizontal_part3"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_24dp"
+        android:layout_marginEnd="@dimen/_24dp"
+        android:layout_height="@dimen/_3dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tab_layout"
+        android:background="@color/tran"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_below="@+id/horizontal_part3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</RelativeLayout>

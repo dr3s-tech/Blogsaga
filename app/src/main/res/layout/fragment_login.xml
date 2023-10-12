@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.LoginFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/login_signup_00"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/txt_email"
+        style="@style/edit_text_style"
+        android:hint="@string/email_hint"
+        android:drawableStart="@drawable/baseline_person_24" />
+    <EditText
+        android:id="@+id/txt_password"
+        style="@style/edit_text_style"
+        android:hint="@string/password_hint"
+        android:drawableStart="@drawable/baseline_key_24" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:text="@string/btnLogin"
+        android:textAllCaps="false"
+        style="@style/button_style" />
+
+    <TextView
+        android:id="@+id/No_account"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_28dp"
+        android:layout_marginTop="@dimen/_12dp"
+        android:text="@string/Have_no_account"
+        android:textSize="@dimen/_17sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/_4dp"
+        />
+
+</LinearLayout>

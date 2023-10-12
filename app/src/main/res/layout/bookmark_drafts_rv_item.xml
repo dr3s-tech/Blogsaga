@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140dp"
+        android:layout_marginStart="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_8dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/article_image"
+            android:layout_width="@dimen/_123dp"
+            android:layout_height="@dimen/_132dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/recent_articles"
+            app:shapeAppearanceOverlay="@style/circle_img"
+            />
+
+        <ImageView
+            android:id="@+id/bookmark_recent"
+            android:layout_width="@dimen/_22dp"
+            android:layout_height="27dp"
+            android:src="@drawable/baseline_bookmark_border_24"
+            android:layout_toStartOf="@+id/three_dots"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_4dp"
+            android:layout_marginEnd="@dimen/_6dp"
+            />
+        <TextView
+            android:id="@+id/article_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 Tips for stay fit and healthy"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@+id/article_image"
+            android:fontFamily="@font/oleoscript_regular"
+            android:textSize="@dimen/_24sp"
+            android:layout_marginStart="@dimen/_12dp"
+            android:layout_marginTop="@dimen/_4dp"
+            />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/client_AC_image"
+            android:layout_width="@dimen/_28dp"
+            android:layout_height="@dimen/_28dp"
+            android:layout_marginStart="@dimen/_12dp"
+            android:layout_marginTop="@dimen/_6dp"
+            android:background="@drawable/singpic"
+            android:layout_toEndOf="@+id/article_image"
+            android:layout_below="@+id/article_title"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/circle"
+            app:strokeWidth="@dimen/_2dp" />
+
+        <TextView
+            android:id="@+id/client_AC_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/client_AC_image"
+            android:text="xyz fightness"
+            android:textSize="@dimen/_14sp"
+            android:layout_below="@+id/article_title"
+            android:fontFamily="@font/oleoscript_regular"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginStart="@dimen/_8dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:layout_toEndOf="@+id/article_image"
+            android:fontFamily="@font/oleoscript_regular"
+            android:text="8 days ago"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sp" />
+
+        <ImageView
+            android:id="@+id/three_dots"
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="@dimen/_20dp"
+            android:src="@drawable/dots"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_8dp"
+            />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

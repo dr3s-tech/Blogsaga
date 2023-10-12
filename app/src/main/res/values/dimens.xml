@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- name _12dp 12dp
+     ..........For Edit.........
+     4dp,8dp,12dp,16dp,24dp,32dp,48dp,64dp,96dp,128dp
+     ....  ...For Padding.......
+     1dp,2dp,5dp,12dp,16dp,24dp
+-->
+<resources>
+
+    <!--    For Padding-->
+    <dimen name="_1dp">1dp</dimen>
+    <dimen name="_2dp">2dp</dimen>
+    <dimen name="_3dp">3dp</dimen>
+    <dimen name="_5dp">5dp</dimen>
+    <dimen name="_12dp">12dp</dimen>
+
+    <!--    For Edit Text-->
+    <dimen name="_4dp">4dp</dimen>
+    <dimen name="_6dp">6dp</dimen>
+    <dimen name="_8dp">8dp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="_14dp">14dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="_20dp">20dp</dimen>
+    <dimen name="_22dp">22dp</dimen>
+    <dimen name="_24dp">24dp</dimen>
+    <dimen name="_25dp">25dp</dimen>
+    <dimen name="_28dp">28dp</dimen>
+    <dimen name="_30dp">30dp</dimen>
+    <dimen name="_32dp">32dp</dimen>
+    <dimen name="_36dp">36dp</dimen>
+    <dimen name="_40dp">40dp</dimen>
+    <dimen name="_44dp">44dp</dimen>
+    <dimen name="_48dp">48dp</dimen>
+    <dimen name="_52dp">52dp</dimen>
+    <dimen name="_64dp">64dp</dimen>
+    <dimen name="_78dp">78dp</dimen>
+    <dimen name="_89dp">89dp</dimen>
+    <dimen name="_88dp">88dp</dimen>
+    <dimen name="_96dp">96dp</dimen>
+    <dimen name="_100dp">100dp</dimen>
+    <dimen name="_104dp">104dp</dimen>
+    <dimen name="_112dp">112dp</dimen> <!-- For button -->
+    <dimen name="_123dp">123dp</dimen>
+    <dimen name="_128dp">128dp</dimen>
+    <dimen name="_132dp">132dp</dimen>
+    <dimen name="_140dp">140dp</dimen>
+    <dimen name="_158dp">158dp</dimen>
+    <dimen name="_164dp">164dp</dimen>
+    <dimen name="_170dp">170dp</dimen>
+    <dimen name="_188dp">188dp</dimen>
+    <dimen name="_198dp">198dp</dimen>
+    <dimen name="_218dp">218dp</dimen>
+    <dimen name="_228dp">228dp</dimen>
+    <dimen name="_250dp">250dp</dimen>
+    <dimen name="_297dp">297dp</dimen>
+    <dimen name="_328dp">328dp</dimen>
+    <dimen name="_356dp">356dp</dimen>
+    <dimen name="_380dp">380dp</dimen>
+    <dimen name="_450dp">450dp</dimen>
+    <dimen name="_680dp">680dp</dimen>
+
+    <!--for text size-->
+    <dimen name="_9sp">9sp</dimen>
+    <dimen name="_10sp">10sp</dimen>
+    <dimen name="_11sp">11sp</dimen>
+    <dimen name="_12sp">12sp</dimen>
+    <dimen name="_14sp">14sp</dimen>
+    <dimen name="_15sp">15sp</dimen>
+    <dimen name="_16sp">16sp</dimen>
+    <dimen name="_17sp">17sp</dimen>
+    <dimen name="_19sp">19sp</dimen>
+    <dimen name="_24sp">24sp</dimen>
+    <dimen name="_30sp">30sp</dimen>
+    <dimen name="_35sp">35sp</dimen>
+    <dimen name="_40sp">40sp</dimen>
+
+    <!-- For margin in Negetive DP-->
+    <dimen name="_N4dp">-4dp</dimen>
+    <dimen name="_N52dp">-52dp</dimen>
+    <dimen name="_N100dp">-100dp</dimen>
+    <dimen name="_N92dp">-92dp</dimen>       <!-- TextView margin Start into profile page -->
+    <dimen name="_N112dp">-112dp</dimen>     <!-- For TextView of the profile page -->
+
+</resources>

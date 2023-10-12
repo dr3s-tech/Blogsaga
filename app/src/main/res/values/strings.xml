@@ -1,0 +1,64 @@
+<resources>
+    <!-- For introduction Page -->
+    <string name="app_name">BlogSaga</string>
+
+    <!-- For Sign up and log in page -->
+    <string name="email_hint">john12@email.com</string>
+    <string name="password_hint">Enter Password</string>
+    <string name="confPassword_hint">Confirm Password</string>
+    <string name="btnLogin">Log in</string>
+    <string name="btnSignUp">Sign up</string>
+    <string name="Already_account">Already have an account? Log in</string>
+    <string name="Have_no_account">Do not have account? Sign up</string>
+
+
+    <!-- For get started page -->
+    <string name="LetsYouIn">Let\'s you in</string>
+    <string name="withGoogle">Continue With Google</string>
+    <string name="withGitHub">Continue With Github</string>
+    <string name="or">OR</string>
+    <string name="withUserName">Continue With Username</string>
+    <string name="dontHaveAccount">Don\'t Have an Account ? </string>
+    <string name="SignUp">Sign Up</string>
+
+    <!-- For Edit profile page -->
+    <string name="txtName">Name</string>
+    <string name="txtEmail">Email</string>
+    <string name="txtPhone">Phone</string>
+    <string name="txtCountry">Country</string>
+    <string name="txtDOB">Date of Birth</string>
+    <string name="btnLogOut">Log out</string>
+
+    <!-- For Draft & published (Profile) page -->
+    <string name="profile">Profile</string>
+    <string name="edit">Edit</string>
+    <string name="articles">Articles</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+    <string name="drafts">Drafts</string>
+    <string name="published">Published</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- For create_page -->
+    <string name="create">Create</string>
+    <string name="save">Save</string>
+    <string name="publish">Publish</string>
+    <string name="addArticleCoverPage">Add article cover page</string>
+    <string name="title">Title</string>
+    <string name="articleTitleHint">Article Title</string>
+    <string name="write_article">Write your article here…</string>
+    <string name="selectTopic">Select Topic</string>
+    <string name="setSchedule">Set schedule</string>
+    <string name="allowComments">Allow comments</string>
+
+    <!-- for Notification page -->
+    <string name="Notification">Notification</string>
+
+    <!--for Bookmark Page-->
+    <string name="My_bookmark">My bookmark</string>
+
+    <!--for Search page-->
+    <string name="Search_hint">Search here</string>
+
+</resources>

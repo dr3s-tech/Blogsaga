@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="light_black">#CE575151</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="peach">#FFCCCC</color>
+    <color name="brown">#943B3B</color>
+    <color name="trans">#00000000</color>
+    <color name="tran">#17070707</color>
+    <color name="dark_green">#F70C6811</color>
+    <color name="light_peach">#E4F5DCDC</color>
+    <color name="remove_back">#00FFFFFF</color>
+    <color name="search">#73FF9C41</color>
+
+</resources>

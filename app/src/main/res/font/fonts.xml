@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>oleo_script</name>
+    <fonts>
+        <font>
+            <font-name>oleoscript_regular.ttf</font-name>
+            <font-style>normal</font-style>
+            <font-weight>normal</font-weight>
+        </font>
+        <font>
+            <font-name>oleoscript_bold.ttf</font-name>
+            <font-style>normal</font-style>
+            <font-weight>bold</font-weight>
+        </font>
+
+
+    </fonts>
+    <name>odormeanchey</name>
+    <fonts>
+        <font-name>oleoscript_regular.ttf</font-name>
+        <font-style>normal</font-style>
+        <font-weight>normal</font-weight>
+
+    </fonts>
+
+    <default>oleoscript_regular.ttf</default>
+</font-family>

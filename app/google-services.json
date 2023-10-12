@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "64894704486",
+    "project_id": "blogsaga-f0940",
+    "storage_bucket": "blogsaga-f0940.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64894704486:android:0e4d757ea0599d2b5d46a7",
+        "android_client_info": {
+          "package_name": "com.example.blogsaga"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMupqXSIH3eriaZHdHCYguAsSJn1KW5ig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
